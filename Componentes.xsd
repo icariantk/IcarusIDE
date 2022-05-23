@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tablaDeComponentes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element maxOccurs="unbounded" name="Basicos">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Nombre" type="xs:string" />
+                <xs:element name="Ocupacion" type="xs:string" />
+                <xs:element name="Latencia" type="xs:string" />
+                <xs:element name="Descripcion" type="xs:string" />
+                <xs:element name="archivo" type="xs:string" />
+                <xs:element name="imagen" type="xs:string" />
+                <xs:element name="documentacion" type="xs:string" />
+                <xs:element name="nemonico" type="xs:string" />
+                <xs:element name="registros" type="xs:unsignedByte" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element maxOccurs="unbounded" name="Controladores">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Nombre" type="xs:string" />
+                <xs:element name="Ocupacion" type="xs:string" />
+                <xs:element name="Latencia" type="xs:string" />
+                <xs:element name="Descripcion" type="xs:string" />
+                <xs:element name="archivo" type="xs:string" />
+                <xs:element name="imagen" />
+                <xs:element name="documentacion" />
+                <xs:element name="nemonico" type="xs:string" />
+                <xs:element name="registros" type="xs:unsignedByte" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="Perifericos">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="Nombre" type="xs:string" />
+                <xs:element name="Ocupacion" type="xs:string" />
+                <xs:element name="Latencia" type="xs:string" />
+                <xs:element name="Descripcion" type="xs:string" />
+                <xs:element name="archivo" type="xs:string" />
+                <xs:element name="imagen" />
+                <xs:element name="documentacion" />
+                <xs:element name="nemonico" type="xs:string" />
+                <xs:element name="registros" type="xs:unsignedShort" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

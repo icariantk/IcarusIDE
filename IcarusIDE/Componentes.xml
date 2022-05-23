@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<tablaDeComponentes>
+  <Basicos>
+    <Nombre>Invertir</Nombre>
+    <Ocupacion>65 Slices</Ocupacion>
+    <Latencia>0.740 ns</Latencia>
+    <Descripcion>Invierte los 32 bits de un registro</Descripcion>
+    <archivo>Basicos\0011_invertir\invertir.vhd</archivo>
+    <imagen>Basicos\0011_invertir\inv.png</imagen>
+    <documentacion>Basicos\0011_invertir\inv.pdf</documentacion>
+    <nemonico>inv</nemonico>
+    <registros>1</registros>
+  </Basicos>
+
+  <Basicos>
+    <Nombre>Complemento a 2</Nombre>
+    <Ocupacion>36 Slices</Ocupacion>
+    <Latencia>5.143 ns</Latencia>
+    <Descripcion>Complementa a 2, un registro de 32 bits</Descripcion>
+    <archivo>Basicos\0002_Complemento2\Complemento2.vhd</archivo>
+    <imagen>Basicos\0002_Complemento2\comp2.png</imagen>
+    <documentacion>Basicos\0002_Complemento2\Comp2.pdf</documentacion>
+    <nemonico>comp2</nemonico>
+    <registros>1</registros>
+  </Basicos>
+
+  <Basicos>
+    <Nombre>Desplazar a la derecha</Nombre>
+    <Ocupacion>36 Slices</Ocupacion>
+    <Latencia>1.483 ns</Latencia>
+    <Descripcion>Desplaza el registro interno una localidad hacia la derecha, rellenando con un '0' su bit más significativo</Descripcion>
+    <archivo>Basicos\0005_desplazarDer\desplazarDer.vhd</archivo>
+    <imagen>Basicos\0005_desplazarDer\dDer.png</imagen>
+    <documentacion>Basicos\0005_desplazarDer\dDer.pdf</documentacion>
+    <nemonico>dder</nemonico>
+    <registros>1</registros>
+  </Basicos>
+  <Basicos>
+    <Nombre>Delay</Nombre>
+    <Ocupacion>121 Slices</Ocupacion>
+    <Latencia>7.393 ns</Latencia>
+    <Descripcion>Selecciona entre 2 registros si otro registro interno es ceo o no, este registro decrementa en 1 cada ciclo de reloj</Descripcion>
+    <archivo>Basicos\0004_delay\delay.vhd</archivo>
+    <imagen>Basicos\0004_delay\delay.png</imagen>
+    <documentacion>Basicos\0004_delay\delay.pdf</documentacion>
+    <nemonico>delay</nemonico>
+    <registros>4</registros>
+  </Basicos>
+
+  <Basicos>
+    <Nombre>Desplazar a la Izquierda</Nombre>
+    <Ocupacion>36 Slices</Ocupacion>
+    <Latencia>1.483 ns</Latencia>
+    <Descripcion>Desplaza el registro interno una localidad hacia la izquierda, rellenando con un '0' su bit menos significativo</Descripcion>
+    <archivo>Basicos\0006_desplazarIzq\desplazarIzq.vhd</archivo>
+    <imagen>Basicos\0006_desplazarIzq\dIzq.png</imagen>
+    <documentacion>Basicos\0006_desplazarIzq\dIzq.pdf</documentacion>
+    <nemonico>dizq</nemonico>
+    <registros>1</registros>
+  </Basicos>
+  <Basicos>
+    <Nombre>Rotar a la Izquierda</Nombre>
+    <Ocupacion>37 Slices</Ocupacion>
+    <Latencia>1.483 ns</Latencia>
+    <Descripcion>Rota un registro hacia la izquierda, rellenando su bit menos significativo, con el su bit más significativo</Descripcion>
+    <archivo>Basicos\0009_rotarIzquierda\RotarIzquierda.vhd</archivo>
+    <imagen>Basicos\0009_rotarIzquierda\rizq.png</imagen>
+    <documentacion>Basicos\0009_rotarIzquierda\rizq.pdf</documentacion>
+    <nemonico>rizq</nemonico>
+    <registros>1</registros>
+  </Basicos>
+  <Basicos>
+    <Nombre>Rotar a la Derecha</Nombre>
+    <Ocupacion>37 Slices</Ocupacion>
+    <Latencia>1.483 ns</Latencia>
+    <Descripcion>Rota un registro hacia la derecha, rellenando su más menos significativo, con el su bit menos significativo</Descripcion>
+    <archivo>Basicos\0008_rotarDerecha\RotarDerecha.vhd</archivo>
+    <imagen>Basicos\0008_rotarDerecha\rder.png</imagen>
+    <documentacion>Basicos\0008_rotarDerecha\rder.pdf</documentacion>
+    <nemonico>rder</nemonico>
+    <registros>1</registros>
+  </Basicos>
+
+  <Controladores>
+    <Nombre>7 Segmentos</Nombre>
+    <Ocupacion>139 Slices</Ocupacion>
+    <Latencia>10.339 ns</Latencia>
+    <Descripcion>Despliega un dato de 32 bits en 4 modulos de 7 segmentos.</Descripcion>
+    <archivo>Controladores\0001_sietesegmentos\SieteSegmentos.vhd</archivo>
+    <imagen>Controladores\0001_sietesegmentos\7seg.png</imagen>
+    <documentacion>Controladores\0001_sietesegmentos\7seg.pdf</documentacion>
+    <nemonico>7seg</nemonico>
+    <registros>1</registros>
+  </Controladores>
+  <Controladores>
+    <Nombre>Interfaz Generador Funciones</Nombre>
+    <Ocupacion>18 Slices + X Brams</Ocupacion>
+    <Latencia>5 ns</Latencia>
+    <Descripcion>Calcula alguna función matemática creada con el programa Generador De funciones</Descripcion>
+    <archivo>Controladores\0003_GenFunc\interfaz.vhd</archivo>
+    <imagen>Controladores\0003_GenFunc\interfaz.png</imagen>
+    <documentacion>Controladores\0003_GenFunc\interfaz.pdf</documentacion>
+    <nemonico>genfunc</nemonico>
+    <registros>1</registros>
+  </Controladores>
+  <Controladores>
+    <Nombre>Teclado PS2</Nombre>
+    <Ocupacion>18 Slices</Ocupacion>
+    <Latencia>2.956 ns</Latencia>
+    <Descripcion>Despliega un dato de 32 bits con los datos que se introduzcan de un teclado PS2.</Descripcion>
+    <archivo>Controladores\0002_Teclado\Teclado.vhd</archivo>
+    <imagen>Controladores\0002_Teclado\Tps2.png</imagen>
+    <documentacion>Controladores\0002_Teclado\Tps2.pdf</documentacion>
+    <nemonico>tps2</nemonico>
+    <registros>1</registros>
+  </Controladores>
+
+  <Basicos>
+    <Nombre>Incrementar</Nombre>
+    <Ocupacion>34 Slices</Ocupacion>
+    <Latencia>5.087 ns</Latencia>
+    <Descripcion>Incrementa en 1 su registro interno.</Descripcion>
+    <archivo>Basicos\0007_Incrementa\Incrementa.vhd</archivo>
+    <imagen>Basicos\0007_Incrementa\inc.png</imagen>
+    <documentacion>Basicos\0007_Incrementa\inc.pdf</documentacion>
+    <nemonico>inc</nemonico>
+    <registros>1</registros>
+  </Basicos>
+  <Basicos>
+    <Nombre>Decrementar</Nombre>
+    <Ocupacion>34 Slices</Ocupacion>
+    <Latencia>5.087 ns</Latencia>
+    <Descripcion>Decrementa en 1 su registro interno.</Descripcion>
+    <archivo>Basicos\0003_Decrementa\Decrementa.vhd</archivo>
+    <imagen>Basicos\0003_Decrementa\Dec.png</imagen>
+    <documentacion>Basicos\0003_Decrementa\Dec.pdf</documentacion>
+    <nemonico>dec</nemonico>
+    <registros>1</registros>
+  </Basicos>
+  <Basicos>
+    <Nombre>ALU</Nombre>
+    <Ocupacion>595 Slices</Ocupacion>
+    <Latencia>13.246 ns</Latencia>
+    <Descripcion>Implementa operaciones básicas aritméticas y lógicas entre registros.</Descripcion>
+    <archivo>Basicos\0001_alu\ALU.vhd</archivo>
+    <imagen>Basicos\0001_alu\ALU.png</imagen>
+    <documentacion>Basicos\0001_alu\ALU.pdf</documentacion>
+    <nemonico>alu</nemonico>
+    <registros>16</registros>
+  </Basicos>
+  <Perifericos>
+    <Nombre>Memoria RAMb16</Nombre>
+    <Ocupacion>18 Slices + 1 BRam</Ocupacion>
+    <Latencia>1.728 ns</Latencia>
+    <Descripcion>Añade 16Kb de memoria RAM para trabajo o para memoria de programa.</Descripcion>
+    <archivo>Perifericos\0001_Ram\ram.vhd</archivo>
+    <imagen>Perifericos\0001_Ram\ram.png</imagen>
+    <documentacion>Perifericos\0001_Ram\ram.pdf</documentacion>
+    <nemonico>ram</nemonico>
+    <registros>512</registros>
+  </Perifericos>
+  <Perifericos>
+    <Nombre>Puerto</Nombre>
+    <Ocupacion>37 Slices</Ocupacion>
+    <Latencia>1.483 ns</Latencia>
+    <Descripcion>>Escribe el contenido de un registro al exterior al microcontrolador</Descripcion>
+    <archivo>Perifericos\0003_Puerto\Puerto.vhd</archivo>
+    <imagen>Perifericos\0003_Puerto\Puerto.png</imagen>
+    <documentacion>Perifericos\0003_Puerto\Puerto.pdf</documentacion>
+    <nemonico>puerto</nemonico>
+    <registros>1</registros>
+  </Perifericos>
+  <Perifericos>
+    <Nombre>Puerto Serial</Nombre>
+    <Ocupacion>364 Slices</Ocupacion>
+    <Latencia>3.726ns</Latencia>
+    <Descripcion>Lee o escribe el contenido de un registro al/del exterior al microcontrolador usando protocolo UART</Descripcion>
+    <archivo>Perifericos\0002_PuertoSeria\PuertoSeria.vhd</archivo>
+    <imagen>Perifericos\0002_PuertoSeria\serial.png</imagen>
+    <documentacion>Perifericos\0002_PuertoSeria\serial.pdf</documentacion>
+    <nemonico>serial</nemonico>
+    <registros>4</registros>
+  </Perifericos>
+  <Basicos>
+    <Nombre>Salto condicional</Nombre>
+    <Ocupacion>167 Slices</Ocupacion>
+    <Latencia>7.365 ns</Latencia>
+    <Descripcion>Compara 2 registros y muestra una dirección a cual saltar en caso de que se cumplan sus condiciones internas.</Descripcion>
+    <archivo>Basicos\0010_Salto_Condicional\Salto_Condicional.vhd</archivo>
+    <imagen>Basicos\0010_Salto_Condicional\if.png</imagen>
+    <documentacion>Basicos\0010_Salto_Condicional\if.pdf</documentacion>
+    <nemonico>if</nemonico>
+    <registros>8</registros>
+  </Basicos>
+
+</tablaDeComponentes>
